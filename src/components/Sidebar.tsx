@@ -166,14 +166,14 @@ const Sidebar = ({ onToggle, activePath = '/' }: SidebarProps) => {
     { icon: VenetianMask, label: '日漫', href: '/douban?type=tv&tag=日本动画' },
   ];
 
-  const { siteName } = useSite();
-  if (siteName !== 'MoonTV') {
-    menuItems.push({
-      icon: Github,
-      label: 'MoonTV',
-      href: 'https://github.com/senshinya/MoonTV',
-    });
-  }
+  // const { siteName } = useSite();
+  // if (siteName !== 'MoonTV') {
+    // menuItems.push({
+      // icon: Github,
+      // label: 'MoonTV',
+      // href: 'https://github.com/senshinya/MoonTV',
+    // });
+  // }
 
   return (
     <SidebarContext.Provider value={contextValue}>
